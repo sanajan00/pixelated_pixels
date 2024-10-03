@@ -29,7 +29,7 @@ nav a {
     text-decoration: none;
 }
 
-/*Bron: https://codepen.io/YoannM/pen/yyExEO */
+/*Bron: Yoann Moinet. (z.d.) Codepen: Online Code Editor and Front End Web Developer Community https://codepen.io/YoannM/pen/yyExEO */
 nav a::before {
     content: "";
     display: block;
