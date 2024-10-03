@@ -1,0 +1,222 @@
+body{
+    background-color: #2E3192;
+    background-image: url(images/achtergrond_2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+header img {
+    width: 3em;
+}
+
+nav a {
+    display: block;
+    background: #1B1464;
+    padding: 0.2em;
+    transition: 450ms; 
+    margin: 1em;
+    padding: 0.7em 3em 0.7em 3em;
+    -webkit-text-stroke-width: 0.04em;
+    -webkit-text-stroke-color: black;
+    color: #fbb03b;
+    font-family:'8BIT WONDER Nominal', Courier, monospace;
+    text-decoration: none;
+}
+
+/*Bron: https://codepen.io/YoannM/pen/yyExEO */
+nav a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
+    background:#1B1464;
+    z-index: -1;
+  }
+
+nav a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: -5px;
+    right: -5px;
+    background:#1B1464;
+    z-index: -1;
+  }
+
+nav a {
+    position: relative;
+    width: auto;
+    z-index: 2;
+}
+/*Einde bron*/
+
+nav a:hover {
+    color:#fb583b;
+    text-decoration: none;
+    transform: translate(0em, 0.2em);
+}
+
+nav a:focus {
+    color:#fb583b;
+    text-decoration: none;
+    transform: translate(0em, 0.2em);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 0.5em;
+}
+
+h1 {
+    text-align: center;
+    font-family: "8BIT WONDER Nominal", Courier, monospace;
+    -webkit-text-stroke-width: 0.04em;
+    -webkit-text-stroke-color: black;
+    color: #fbb03b;
+    font-size: xx-large;
+}
+
+h2 {
+    -webkit-text-stroke-width: 0.04em;
+    -webkit-text-stroke-color: black;
+    color: #fbb03b;
+    font-family:'8BIT WONDER Nominal', Courier, monospace;
+    font-size: x-large;
+    text-align: center;
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+    0% {color: #fbb03b;
+    }
+
+    10% {color: #fba83b;
+    }
+
+    25% {color: #fb6b3b;
+    }
+
+    50% {color:#fb583b;
+    }
+
+    75% {color:#fb813b;
+    }
+
+    100% {color: #fbb03b;
+    }
+}
+
+h3 {
+    background-color: #1B1464;
+    border-radius: 2em;
+    padding: 2em;
+    margin-left: 15em;
+    margin-right: 15em;
+    color: #fbb03b;
+    font-family: "Cascadia Code", Courier, monospace;
+    text-align: center;
+    font-size: large;
+}
+
+main p {
+    background-color: #1B1464;
+    border-radius: 2em;
+    padding: 2em;
+    margin-left: 15em;
+    margin-right: 15em;
+    text-align: center;
+    color: #beffff;
+    font-family: "Cascadia Code", Courier, monospace;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+p a {
+    color: #beffffa1;
+    font-family: 'Cascadia Code', Courier, monospace;
+}
+
+p a:hover {
+    color: #128f8fa1;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+strong {
+    color: #fbb03b;
+    padding: 0.5em;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+.horizontaal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+    background-color: #1B1464;
+    border-radius: 2em;
+    padding: 2em;
+}
+
+.horizontaal h2 {
+    text-align: left;
+    animation: none;
+}
+
+.info p {
+    margin: 0;
+    padding: 0;
+    background-color: unset;
+}
+
+input {
+    background-color: #77b8d5;
+    display: block;
+    font-family: "Cascadia Code", serif;
+    color: #1b1464;
+}
+
+button {
+    background-color: #1B1464;
+    margin: 0.5em;
+    font-family: "Cascadia Code", monospace;
+    color:#77b8d5;
+}
+
+button:hover {
+    background-color: #2f2874;
+    cursor: pointer;
+}
+
+footer p {
+    color: #ffad77;
+    font-family:'8BIT WONDER Nominal', Courier, monospace;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
